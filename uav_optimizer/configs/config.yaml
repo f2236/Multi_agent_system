@@ -1,0 +1,29 @@
+simulation:
+  time_step_duration: 1.0        # Δt (seconds)
+  num_steps: 10                  # T
+  uav_speed: 10.0                # V (m/s)
+  min_altitude: 5.0
+  max_altitude: 500.0
+  grid_x_bounds: [0.0, 1000.0]
+  grid_y_bounds: [0.0, 1000.0]
+  min_uav_separation: 10.0       # d_min (meters)
+  max_uav_separation: 2000.0
+  num_antennas: 1
+  antenna_ports_per_uav: 1      # K=1 (fixed)
+  max_iterations: 20
+  convergence_threshold: 0.001
+  seed: 42
+
+antennas:
+  - antenna_id: 0
+    position:
+      x: 500.0
+      y: 500.0
+      z: 20.0
+    max_users: 10
+    tx_power_dbm: 20.0
+    bandwidth_hz: 1.0e6
+    frequency_hz: 2.4e9
+    noise_figure_db: 7.0
+
+debug: false

@@ -1,0 +1,10 @@
+pydantic
+loguru
+numpy>=1.23
+scipy
+pytest
+streamlit
+plotly
+requests
+reportlab
+python-dotenv
